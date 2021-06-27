@@ -4,7 +4,7 @@ function Planet(props) {
 
     return (
         <div>
-            test: {planetary.name}
+            Planet: {planetary.name}
         </div>
     )
 

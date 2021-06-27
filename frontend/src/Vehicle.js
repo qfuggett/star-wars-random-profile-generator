@@ -1,9 +1,10 @@
 function Vehicle (props) {
 
+    const {vehicles} = props
 
     return (
         <div>
-            test
+            Vehicle: {vehicles.name}
         </div>
     )
 }

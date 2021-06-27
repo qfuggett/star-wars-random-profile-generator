@@ -4,7 +4,7 @@ function Person (props) {
 
     return (
         <div>
-            {people.name}
+            Person: {people.name}
         </div>
     )
 }

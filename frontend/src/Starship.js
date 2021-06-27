@@ -1,9 +1,10 @@
 function Starship (props) {
 
+    const {starships} = props
 
     return (
         <div>
-            test
+            Starship: {starships.name}
         </div>
     )
 }
