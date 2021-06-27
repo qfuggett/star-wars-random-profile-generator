@@ -1,6 +1,8 @@
 import React from 'react';
-import Person from "./Person"
-import Planet from "./Planet"
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Person from "./Person";
+import Planet from "./Planet";
 import Starship from './Starship';
 import Vehicle from './Vehicle';
 
@@ -11,6 +13,7 @@ function Api () {
     const [planet, setPlanets] = React.useState([]);
     const [starship, setStarships] = React.useState([]);
     const [vehicle, setVehicles] = React.useState([]);
+    const [profile, setProfile] = React.useState([]);
 
     function searchApi(evt) {
         // Automatically fetches api on load
@@ -79,22 +82,35 @@ function Api () {
             setStarships(strshp)
         })
     }
+
+    function saveProfile(evt) {
+        evt.preventDefault()
+
+
+    }
     
     
     return (
         <div>
-            <form onSubmit={(evt) => {searchApi(evt)}}>
-                <button>Toggle this profile</button>
-            </form>
-
-            <Person people={person}/>
-            <Planet planetary={planet}/>
-            <Starship starships={starship}/>
-            <Vehicle vehicles={vehicle}/>
-
-            <form>
-                <button>Save this profile!</button>
-            </form>
+            <Container>
+                <Row>
+                    <form onSubmit={(evt) => {searchApi(evt)}}>
+                        <button>Toggle this profile</button>
+                    </form>
+                </Row>
+                <Row>
+                    <Person people={person}/>
+                    <Planet planetary={planet}/>
+                    <Starship starships={starship}/>
+                    <Vehicle vehicles={vehicle}/>
+                </Row>
+                <Row>
+                    <form onSubmit={(evt) => {saveProfile(evt)}}>
+                        <button>Save this profile!</button>
+                    </form>
+                </Row>
+            </Container>
+            
         </div>
     )
 }
