@@ -1,6 +1,8 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import CardGroup from 'react-bootstrap/CardGroup';
+import Button from 'react-bootstrap/Button';
 import Person from "./Person";
 import Planet from "./Planet";
 import Starship from './Starship';
@@ -85,33 +87,31 @@ function Api () {
 
     function saveProfile(evt) {
         evt.preventDefault()
-
+        console.log("test")
 
     }
     
     
     return (
-        <div>
+        <>
             <Container>
                 <Row>
-                    <form onSubmit={(evt) => {searchApi(evt)}}>
-                        <button>Toggle this profile</button>
-                    </form>
+                    <Button onClick={(evt) => {searchApi(evt)}} variant="dark">Toggle this profile</Button>
                 </Row>
                 <Row>
-                    <Person people={person}/>
-                    <Planet planetary={planet}/>
-                    <Starship starships={starship}/>
-                    <Vehicle vehicles={vehicle}/>
+                    <CardGroup>
+                        <Person people={person}/>
+                        <Planet planetary={planet}/>
+                        <Starship starships={starship}/>
+                        <Vehicle vehicles={vehicle}/>
+                    </CardGroup>
                 </Row>
                 <Row>
-                    <form onSubmit={(evt) => {saveProfile(evt)}}>
-                        <button>Save this profile!</button>
-                    </form>
+                    <Button onClick={(evt) => {saveProfile(evt)}} variant="dark">Save this profile!</Button>
                 </Row>
             </Container>
             
-        </div>
+        </>
     )
 }
 
