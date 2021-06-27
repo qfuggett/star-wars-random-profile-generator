@@ -1,6 +1,8 @@
 import React from 'react';
 import Person from "./Person"
 import Planet from "./Planet"
+import Starship from './Starship';
+import Vehicle from './Vehicle';
 
 function Api () {
 
@@ -50,6 +52,8 @@ function Api () {
             
             <Person people={person}/>
             <Planet planetary={planet}/>
+            <Starship />
+            <Vehicle />
         </div>
     )
 }
