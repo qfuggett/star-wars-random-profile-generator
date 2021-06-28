@@ -1,4 +1,4 @@
-# star-wars-profile-creator
+# Star Wars Profile Generator
 A React application that allows the user to randomly generate a Star Wars profile.
 
 ## Installation
