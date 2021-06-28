@@ -1,3 +1,4 @@
+import React from 'react';
 import Card from 'react-bootstrap/Card';
 
 function Person (props) {
@@ -16,7 +17,6 @@ function Person (props) {
                             <li>Eye Color: {people.eye_color}</li>
                             <li>Hair Color: {people.hair_color}</li>
                             <li>Skin Color: {people.skin_color}</li>
-                            {/* <li>As seen in: {people.films}</li> */}
                         </ul>
                         
                     </Card.Text>
