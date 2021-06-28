@@ -6,14 +6,14 @@ function Planet(props) {
 
     return (
         <>
-            <Card border="dark">
-                <Card.Header><b>Planet {planetary.name}</b></Card.Header>
+            <Card border="dark" bg="light">
+                <Card.Header><b>You live on Planet {planetary.name}</b></Card.Header>
                 <Card.Body>
                     <Card.Text>
                         <ul>
-                            <li>Has a population of {planetary.population} residents</li>
-                            <li>{planetary.terrain} terrain</li>
-                            <li>Has a {planetary.climate} climate</li>
+                            <li>Has a population of {planetary.population} residents</li><br/>
+                            <li>The planet has {planetary.terrain} terrain</li><br/>
+                            <li>Has a {planetary.climate} climate</li><br/>
                         </ul>
                     </Card.Text>
                 </Card.Body>

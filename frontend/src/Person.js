@@ -7,7 +7,7 @@ function Person (props) {
     return (
        <>
             <Card border="dark" bg="light">
-                <Card.Header><b>Name</b><br/>{people.name}</Card.Header>
+                <Card.Header><b>You are {people.name}!</b></Card.Header>
                 <Card.Body>
                     <Card.Text>
                         <ul>
@@ -16,7 +16,7 @@ function Person (props) {
                             <li>Eye Color: {people.eye_color}</li>
                             <li>Hair Color: {people.hair_color}</li>
                             <li>Skin Color: {people.skin_color}</li>
-                            <li>As seen in: {people.films}</li>
+                            {/* <li>As seen in: {people.films}</li> */}
                         </ul>
                         
                     </Card.Text>

@@ -11,13 +11,11 @@ function Vehicle (props) {
                 <Card.Body>
                     <Card.Text>
                         <ul>
-                            <li>The {vehicles.model} model</li>
-                            <li>Worth {vehicles.cost_in_credits} credits</li>
+                            <li>The {vehicles.model} model is worth {vehicles.cost_in_credits} credits</li><br/>
                             <li>Holds a crew of {vehicles.crew}</li>
-                            <li>Holds {vehicles.passengers} passengers</li>
-                            <li>Capable of carrying {vehicles.cargo_capacity} loads</li>
-                            <li>{vehicles.vehicle_class} vehicle type</li>
-                            <li>Has a max speed of {vehicles.max_atmosphering_speed}</li>
+                            <li>Holds {vehicles.passengers} passengers</li><br/>
+                            <li>Capable of carrying {vehicles.cargo_capacity} loads and has a max speed of {vehicles.max_atmosphering_speed}</li><br/>
+                            <li>Is a {vehicles.vehicle_class} vehicle type</li>
                         </ul>
                     </Card.Text>
                 </Card.Body>

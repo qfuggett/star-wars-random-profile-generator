@@ -108,7 +108,7 @@ function Api () {
             <Jumbotron style={{ backgroundImage: `url(${starwars})`, backgroundSize: 'contain' }}></Jumbotron>
             <Container>
                 <Row>
-                    <p>
+                    <p style={{color: "white"}}>
                         Randomly generate your Star Wars profile!
                     </p>
                 </Row>

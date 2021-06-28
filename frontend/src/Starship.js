@@ -6,17 +6,16 @@ function Starship (props) {
 
     return (
         <>
-            <Card border="dark">
-                <Card.Header><b>{starships.name} starship</b></Card.Header>
+            <Card border="dark" bg="light">
+                <Card.Header><b>You own the {starships.name} starship</b></Card.Header>
                 <Card.Body>
                     <Card.Text>
                         <ul>
-                            <li>Created by {starships.manufacturer}</li>
-                            <li>Worth {starships.cost_in_credits} credits</li>
+                            <li>Created by {starships.manufacturer}, with a {starships.hyperdrive_rating} hyperdrive</li><br/>
+                            <li>Worth {starships.cost_in_credits} credits</li><br/>
                             <li>Holds a crew of {starships.crew}</li>
-                            <li>Holds {starships.passengers} passengers</li>
+                            <li>Holds {starships.passengers} passengers</li><br/>
                             <li>Capable of carrying {starships.cargo_capacity} loads</li>
-                            <li>{starships.hyperdrive_rating} hyperdrive</li>
                         </ul>
                     </Card.Text>
                 </Card.Body>
