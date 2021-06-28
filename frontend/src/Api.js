@@ -3,10 +3,12 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import CardGroup from 'react-bootstrap/CardGroup';
 import Button from 'react-bootstrap/Button';
+import Jumbotron from 'react-bootstrap/Jumbotron';
 import Person from "./Person";
 import Planet from "./Planet";
 import Starship from './Starship';
 import Vehicle from './Vehicle';
+import starwars from './img/starwars.png';
 
 function Api () {
 
@@ -15,7 +17,7 @@ function Api () {
     const [planet, setPlanets] = React.useState([]);
     const [starship, setStarships] = React.useState([]);
     const [vehicle, setVehicles] = React.useState([]);
-    const [profile, setProfile] = React.useState([]);
+    // const [profile, setProfile] = React.useState({savedPerson: "", savedPlanet: "", savedStarship: "", savedVehicle: ""});
 
     function searchApi(evt) {
         // Automatically fetches api on load
@@ -85,18 +87,30 @@ function Api () {
         })
     }
 
-    function saveProfile(evt) {
-        evt.preventDefault()
-        console.log("test")
+    // function saveProfile(evt) {
+    //     evt.preventDefault()
+    //     console.log("test")
 
-    }
+    //     setProfile({
+    //         savedPerson: person,
+    //         savedPlanet: planet,
+    //         savedStarship: starship,
+    //         savedVehicle: vehicle
+    //     })
+
+    //     console.log(profile)
+
+    // }
     
     
     return (
         <>
+            <Jumbotron style={{ backgroundImage: `url(${starwars})`, backgroundSize: 'contain' }}></Jumbotron>
             <Container>
                 <Row>
-                    <Button onClick={(evt) => {searchApi(evt)}} variant="dark">Toggle this profile</Button>
+                    <p>
+                        Randomly generate your Star Wars profile!
+                    </p>
                 </Row>
                 <Row>
                     <CardGroup>
@@ -107,8 +121,12 @@ function Api () {
                     </CardGroup>
                 </Row>
                 <Row>
-                    <Button onClick={(evt) => {saveProfile(evt)}} variant="dark">Save this profile!</Button>
+                    <Button onClick={(evt) => {searchApi(evt)}} variant="dark">Toggle this profile</Button>
                 </Row>
+                {/* Future Feature
+                <Row>
+                    <Button onClick={(evt) => {saveProfile(evt)}} variant="dark">Save this profile!</Button>
+                </Row> */}
             </Container>
             
         </>
