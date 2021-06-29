@@ -4,11 +4,13 @@ import Row from 'react-bootstrap/Row';
 import CardGroup from 'react-bootstrap/CardGroup';
 import Button from 'react-bootstrap/Button';
 import Jumbotron from 'react-bootstrap/Jumbotron';
+import { Input } from 'reactstrap';
 import Person from "./Person";
 import Planet from "./Planet";
 import Starship from './Starship';
 import Vehicle from './Vehicle';
 import starwars from './img/starwars.png';
+import DatePicker from './DatePicker';
 
 function Api () {
 
@@ -112,6 +114,16 @@ function Api () {
                         Randomly generate your Star Wars profile!
                     </p>
                 </Row>
+                <Row>
+                    <DatePicker />
+                </Row>
+                    <h2 id="audits-page-heading">Test Fields</h2>
+                    <span>from</span>
+                    <Input />
+                    {/* <Input type="date" value={fromDate} onChange={onChangeFromDate} name="fromDate" id="fromDate" /> */}
+                    <span>to</span>
+                    <Input />
+                    {/* <Input type="date" value={toDate} onChange={onChangeToDate} name="toDate" id="toDate" /> */}
                 <Row>
                     <CardGroup>
                         <Person people={person}/>
