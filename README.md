@@ -1,5 +1,5 @@
 # Star Wars Profile Generator
-A React application that allows the user to randomly generate a Star Wars profile.
+A React application that allows the user to randomly generate a Star Wars profile with data pulled from a Star Wars API.
 
 ## Installation
 `cd frontend` to enter the project.
