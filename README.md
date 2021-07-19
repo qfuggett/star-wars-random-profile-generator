@@ -1,7 +1,7 @@
 # Star Wars Profile Generator
 A React application that allows the user to randomly generate a Star Wars profile with data pulled from a Star Wars API.
 
-![demo](https://github.com/qfuggett/star-wars-random-profile-generator/frontend/public/star-wars.png)
+![demo](https://github.com/qfuggett/star-wars-random-profile-generator/blob/main/frontend/public/star-wars.png)
 
 ## Installation
 `cd frontend` to enter the project.
