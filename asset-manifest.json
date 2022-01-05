@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/star-wars-random-profile-generator/static/css/main.e7639565.chunk.css",
+    "main.js": "/star-wars-random-profile-generator/static/js/main.71f6121c.chunk.js",
+    "main.js.map": "/star-wars-random-profile-generator/static/js/main.71f6121c.chunk.js.map",
+    "runtime-main.js": "/star-wars-random-profile-generator/static/js/runtime-main.b995c2a6.js",
+    "runtime-main.js.map": "/star-wars-random-profile-generator/static/js/runtime-main.b995c2a6.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/star-wars-random-profile-generator/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.55470ba4.chunk.js": "/star-wars-random-profile-generator/static/js/2.55470ba4.chunk.js",
+    "static/js/2.55470ba4.chunk.js.map": "/star-wars-random-profile-generator/static/js/2.55470ba4.chunk.js.map",
+    "index.html": "/star-wars-random-profile-generator/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/star-wars-random-profile-generator/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.e7639565.chunk.css.map": "/star-wars-random-profile-generator/static/css/main.e7639565.chunk.css.map",
+    "static/js/2.55470ba4.chunk.js.LICENSE.txt": "/star-wars-random-profile-generator/static/js/2.55470ba4.chunk.js.LICENSE.txt",
+    "static/media/starwars.eaeadd46.png": "/star-wars-random-profile-generator/static/media/starwars.eaeadd46.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b995c2a6.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.55470ba4.chunk.js",
+    "static/css/main.e7639565.chunk.css",
+    "static/js/main.71f6121c.chunk.js"
+  ]
+}
